@@ -1,0 +1,79 @@
+/* Copyright (C) 2007 - 2011 YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+#left #form-login fieldset,
+#right #form-login fieldset { border: none; }
+
+/*
+ * YOOtweet
+ */
+
+/* single */
+#bottom div.single div.yoo-tweet {
+	min-height: 40px;
+	padding-right: 80px;
+	text-align: right;
+	background: url(../images/yootweet/tweet_bg.png) 100% 50% no-repeat;
+}
+
+#bottom div.single div.yoo-tweet p.text {
+	font-size: 24px;
+	line-height: 30px;
+	font-style: italic;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/*
+ * YOOlogin
+ */
+
+ 
+/* quick */
+#header span.quick span.yoo-login {}
+
+#header span.quick span.yoo-login span.login { width: 231px; }
+
+#header span.quick span.yoo-login span.login span.login-button-text,
+#header span.quick span.yoo-login span.login span.login-button-icon { margin-right: 0px; }
+
+#header span.quick span.yoo-login span.login span.lostpassword, 
+#header span.quick span.yoo-login span.login span.lostusername,
+#header span.quick span.yoo-login span.login span.registration { margin-top: 5px; }
+
+#header span.quick span.yoo-login span.logout {
+	margin-top: 10px;
+	overflow: visible;
+}
+
+#header span.quick span.yoo-login span.logout span.logout-button-text,
+#header span.quick span.yoo-login span.logout span.logout-button-icon { margin-right: 0px; }
+
+/* nifty quick */
+#header span.niftyquick span.yoo-login {}
+
+#header span.niftyquick span.yoo-login span.login {
+	width: 268px;
+	height: 50px;
+}
+
+#header span.niftyquick span.yoo-login span.login span.login-button { margin-right: 0px; }
+
+#header span.niftyquick span.yoo-login span.login span.lostpassword, 
+#header span.niftyquick span.yoo-login span.login span.lostusername,
+#header span.niftyquick span.yoo-login span.login span.registration { margin-top: 5px; }
+
+#header span.niftyquick span.yoo-login span.logout {
+	margin-top: 10px;
+	overflow: visible;
+}
+
+#header span.niftyquick span.yoo-login span.logout span.logout-button { margin-right: 0px; }
+
+ 
+#header span.niftyquick span.yoo-login span.login span.username input,
+#header span.niftyquick span.yoo-login span.login span.password input {
+	width: 95%;
+	height: 12px;
+	background: #ffffff;
+	border: 1px solid #ffffff;
+	overflow: hidden;
+}

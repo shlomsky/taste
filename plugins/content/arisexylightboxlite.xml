@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+	<name>Content - ARI Sexy Lightbox Lite</name>
+	<author>ARI Soft</author>
+	<creationDate>June 2010</creationDate>
+	<copyright>ARI Soft</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@ari-soft.com</authorEmail>
+	<authorUrl>www.ari-soft.com</authorUrl>
+	<version>1.0.7</version>
+	<description>ARI SEXY LIGHTBOX LITE PLUGIN</description>
+	<files>
+		<filename plugin="arisexylightboxlite">arisexylightboxlite.php</filename>
+		<folder>arisexylightboxlite/</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_arisexylightboxlite.ini</language>
+	</languages>
+	<params>
+		<param name="includeJQuery" type="list" default="1" label="ASEXYBOXLITE_PARAM_LABEL_INCJQUERY" description="ASEXYBOXLITE_PARAM_DESCR_INCJQUERY">
+  			<option value="0">ASEXYBOXLITE_LABEL_NO</option> 
+  			<option value="1">ASEXYBOXLITE_LABEL_YES</option> 
+  		</param>
+		<param name="noConflict" type="list" default="1" label="ASEXYBOXLITE_PARAM_LABEL_NOCONFLICT" description="ASEXYBOXLITE_PARAM_DESCR_NOCONFLICT">
+  			<option value="0">ASEXYBOXLITE_LABEL_NO</option> 
+  			<option value="1">ASEXYBOXLITE_LABEL_YES</option> 
+  		</param>
+		<param name="loadAssets" type="list" default="auto" label="ASEXYBOXLITE_PARAM_LABEL_LOADASSETS" description="ASEXYBOXLITE_PARAM_DESCR_LOADASSETS">
+  			<option value="auto">ASEXYBOXLITE_LABEL_AUTO</option> 
+  			<option value="always">ASEXYBOXLITE_LABEL_ALWAYS</option> 
+  		</param>
+  		<param name="opt_find" type="text" size="30" default="sexylightbox" label="ASEXYBOXLITE_PARAM_LABEL_REL" description="ASEXYBOXLITE_PARAM_DESCR_REL" />
+  		<param name="opt_zIndex" type="text" size="6" default="32000" label="ASEXYBOXLITE_PARAM_LABEL_ZINDEX" description="ASEXYBOXLITE_PARAM_DESCR_ZINDEX" />
+  		<param name="opt_color" type="list" default="black" label="ASEXYBOXLITE_PARAM_LABEL_THEME" description="ASEXYBOXLITE_PARAM_DESCR_THEME">
+  			<option value="white">ASEXYBOXLITE_LABEL_WHITE</option> 
+  			<option value="black">ASEXYBOXLITE_LABEL_BLACK</option>
+  			<option value="blanco">ASEXYBOXLITE_LABEL_BLANCO</option> 
+  			<option value="negro">ASEXYBOXLITE_LABEL_NEGRO</option>
+  		</param>
+  		<param name="opt_emergefrom" type="list" default="top" label="ASEXYBOXLITE_PARAM_LABEL_EMERGEFROM" description="ASEXYBOXLITE_PARAM_DESCR_EMERGEFROM">
+  			<option value="bottom">ASEXYBOXLITE_LABEL_BOTTOM</option> 
+  			<option value="top">ASEXYBOXLITE_LABEL_TOP</option>
+  		</param>
+  		<param name="opt_showDuration" type="text" size="6" default="200" label="ASEXYBOXLITE_PARAM_LABEL_SHOWDURATION" description="ASEXYBOXLITE_PARAM_DESCR_SHOWDURATION" />
+  		<param name="opt_closeDuration" type="text" size="6" default="400" label="ASEXYBOXLITE_PARAM_LABEL_CLOSEDURATION" description="ASEXYBOXLITE_PARAM_DESCR_CLOSEDURATION" />
+  		<param name="opt_moveDuration" type="text" size="6" default="1000" label="ASEXYBOXLITE_PARAM_LABEL_MOVEDURATION" description="ASEXYBOXLITE_PARAM_DESCR_MOVEDURATION" />
+  		<param name="opt_moveEffect" type="list" default="easeInOutBack" label="ASEXYBOXLITE_PARAM_LABEL_MOVEEFFECT" description="ASEXYBOXLITE_PARAM_DESCR_MOVEEFFECT">
+  			<option value="swing">ASEXYBOXLITE_LABEL_SWING</option>
+  			<option value="easeInQuad">ASEXYBOXLITE_LABEL_EASYINQUAD</option>
+  			<option value="easeOutQuad">ASEXYBOXLITE_LABEL_EASYOUTQUAD</option>
+  			<option value="easeInOutQuad">ASEXYBOXLITE_LABEL_EASYINOUTQUAD</option>
+  			<option value="easeInCubic">ASEXYBOXLITE_LABEL_EASYINCUBIC</option>
+  			<option value="easeOutCubic">ASEXYBOXLITE_LABEL_EASYOUTCUBIC</option>
+  			<option value="easeInOutCubic">ASEXYBOXLITE_LABEL_EASYINOUTCUBIC</option>
+  			<option value="easeInQuart">ASEXYBOXLITE_LABEL_EASYINQUART</option>
+  			<option value="easeOutQuart">ASEXYBOXLITE_LABEL_EASYOUTQUART</option>
+  			<option value="easeInOutQuart">ASEXYBOXLITE_LABEL_EASYINOUTQUART</option>
+  			<option value="easeInQuint">ASEXYBOXLITE_LABEL_EASYINQUINT</option>
+  			<option value="easeOutQuint">ASEXYBOXLITE_LABEL_EASYOUTQUINT</option>
+  			<option value="easeInOutQuint">ASEXYBOXLITE_LABEL_EASYINOUTQUINT</option>
+  			<option value="easeInSine">ASEXYBOXLITE_LABEL_EASYINSINE</option>
+  			<option value="easeOutSine">ASEXYBOXLITE_LABEL_EASYOUTSINE</option>
+  			<option value="easeInOutSine">ASEXYBOXLITE_LABEL_EASYINOUTSINE</option>
+  			<option value="easeInExpo">ASEXYBOXLITE_LABEL_EASYINEXPO</option>
+  			<option value="easeOutExpo">ASEXYBOXLITE_LABEL_EASYOUTEXPO</option>
+  			<option value="easeInOutExpo">ASEXYBOXLITE_LABEL_EASYINOUTEXPO</option>
+  			<option value="easeInCirc">ASEXYBOXLITE_LABEL_EASYINCIRC</option>
+  			<option value="easeOutCirc">ASEXYBOXLITE_LABEL_EASYOUTCIRC</option>
+  			<option value="easeInOutCirc">ASEXYBOXLITE_LABEL_EASYINOUTCIRC</option>
+  			<option value="easeInElastic">ASEXYBOXLITE_LABEL_EASYINELASTIC</option>
+  			<option value="easeOutElastic">ASEXYBOXLITE_LABEL_EASYOUTELASTIC</option>
+  			<option value="easeInOutElastic">ASEXYBOXLITE_LABEL_EASYINOUTELASTIC</option>
+  			<option value="easeInBack">ASEXYBOXLITE_LABEL_EASYINBACK</option>
+  			<option value="easeOutBack">ASEXYBOXLITE_LABEL_EASYOUTBACK</option>
+  			<option value="easeInOutBack">ASEXYBOXLITE_LABEL_EASYINOUTBACK</option>
+  			<option value="easeInBounce">ASEXYBOXLITE_LABEL_EASYINBOUNCE</option>
+  			<option value="easeOutBounce">ASEXYBOXLITE_LABEL_EASYOUTBOUNCE</option>
+  			<option value="easeInOutBounce">ASEXYBOXLITE_LABEL_EASYINOUTBOUNCE</option>
+  		</param>
+  		<param name="opt_resizeDuration" type="text" size="6" default="1000" label="ASEXYBOXLITE_PARAM_LABEL_RESIZEDURATION" description="ASEXYBOXLITE_PARAM_DESCR_RESIZEDURATION" />
+  		<param name="opt_resizeEffect" type="list" default="easeInOutBack" label="ASEXYBOXLITE_PARAM_LABEL_RESIZEEFFECT" description="ASEXYBOXLITE_PARAM_DESCR_RESIZEEFFECT">
+  			<option value="swing">ASEXYBOXLITE_LABEL_SWING</option>
+  			<option value="easeInQuad">ASEXYBOXLITE_LABEL_EASYINQUAD</option>
+  			<option value="easeOutQuad">ASEXYBOXLITE_LABEL_EASYOUTQUAD</option>
+  			<option value="easeInOutQuad">ASEXYBOXLITE_LABEL_EASYINOUTQUAD</option>
+  			<option value="easeInCubic">ASEXYBOXLITE_LABEL_EASYINCUBIC</option>
+  			<option value="easeOutCubic">ASEXYBOXLITE_LABEL_EASYOUTCUBIC</option>
+  			<option value="easeInOutCubic">ASEXYBOXLITE_LABEL_EASYINOUTCUBIC</option>
+  			<option value="easeInQuart">ASEXYBOXLITE_LABEL_EASYINQUART</option>
+  			<option value="easeOutQuart">ASEXYBOXLITE_LABEL_EASYOUTQUART</option>
+  			<option value="easeInOutQuart">ASEXYBOXLITE_LABEL_EASYINOUTQUART</option>
+  			<option value="easeInQuint">ASEXYBOXLITE_LABEL_EASYINQUINT</option>
+  			<option value="easeOutQuint">ASEXYBOXLITE_LABEL_EASYOUTQUINT</option>
+  			<option value="easeInOutQuint">ASEXYBOXLITE_LABEL_EASYINOUTQUINT</option>
+  			<option value="easeInSine">ASEXYBOXLITE_LABEL_EASYINSINE</option>
+  			<option value="easeOutSine">ASEXYBOXLITE_LABEL_EASYOUTSINE</option>
+  			<option value="easeInOutSine">ASEXYBOXLITE_LABEL_EASYINOUTSINE</option>
+  			<option value="easeInExpo">ASEXYBOXLITE_LABEL_EASYINEXPO</option>
+  			<option value="easeOutExpo">ASEXYBOXLITE_LABEL_EASYOUTEXPO</option>
+  			<option value="easeInOutExpo">ASEXYBOXLITE_LABEL_EASYINOUTEXPO</option>
+  			<option value="easeInCirc">ASEXYBOXLITE_LABEL_EASYINCIRC</option>
+  			<option value="easeOutCirc">ASEXYBOXLITE_LABEL_EASYOUTCIRC</option>
+  			<option value="easeInOutCirc">ASEXYBOXLITE_LABEL_EASYINOUTCIRC</option>
+  			<option value="easeInElastic">ASEXYBOXLITE_LABEL_EASYINELASTIC</option>
+  			<option value="easeOutElastic">ASEXYBOXLITE_LABEL_EASYOUTELASTIC</option>
+  			<option value="easeInOutElastic">ASEXYBOXLITE_LABEL_EASYINOUTELASTIC</option>
+  			<option value="easeInBack">ASEXYBOXLITE_LABEL_EASYINBACK</option>
+  			<option value="easeOutBack">ASEXYBOXLITE_LABEL_EASYOUTBACK</option>
+  			<option value="easeInOutBack">ASEXYBOXLITE_LABEL_EASYINOUTBACK</option>
+  			<option value="easeInBounce">ASEXYBOXLITE_LABEL_EASYINBOUNCE</option>
+  			<option value="easeOutBounce">ASEXYBOXLITE_LABEL_EASYOUTBOUNCE</option>
+  			<option value="easeInOutBounce">ASEXYBOXLITE_LABEL_EASYINOUTBOUNCE</option>
+  		</param>
+  		<param name="opt_shake_distance" type="text" size="6" default="10" label="ASEXYBOXLITE_PARAM_LABEL_SHAKEDISTANCE" description="ASEXYBOXLITE_PARAM_DESCR_SHAKEDISTANCE" />
+  		<param name="opt_shake_duration" type="text" size="6" default="100" label="ASEXYBOXLITE_PARAM_LABEL_SHAKEDURATION" description="ASEXYBOXLITE_PARAM_DESCR_SHAKEDURATION" />
+  		<param name="opt_shake_loops" type="text" size="6" default="2" label="ASEXYBOXLITE_PARAM_LABEL_SHAKELOOPS" description="ASEXYBOXLITE_PARAM_DESCR_SHAKELOOPS" />
+  		<param name="opt_shake_transition" type="list" default="easeInOutBack" label="ASEXYBOXLITE_PARAM_LABEL_SHAKEEFFECT" description="ASEXYBOXLITE_PARAM_DESCR_SHAKEEFFECT">
+  			<option value="swing">ASEXYBOXLITE_LABEL_SWING</option>
+  			<option value="easeInQuad">ASEXYBOXLITE_LABEL_EASYINQUAD</option>
+  			<option value="easeOutQuad">ASEXYBOXLITE_LABEL_EASYOUTQUAD</option>
+  			<option value="easeInOutQuad">ASEXYBOXLITE_LABEL_EASYINOUTQUAD</option>
+  			<option value="easeInCubic">ASEXYBOXLITE_LABEL_EASYINCUBIC</option>
+  			<option value="easeOutCubic">ASEXYBOXLITE_LABEL_EASYOUTCUBIC</option>
+  			<option value="easeInOutCubic">ASEXYBOXLITE_LABEL_EASYINOUTCUBIC</option>
+  			<option value="easeInQuart">ASEXYBOXLITE_LABEL_EASYINQUART</option>
+  			<option value="easeOutQuart">ASEXYBOXLITE_LABEL_EASYOUTQUART</option>
+  			<option value="easeInOutQuart">ASEXYBOXLITE_LABEL_EASYINOUTQUART</option>
+  			<option value="easeInQuint">ASEXYBOXLITE_LABEL_EASYINQUINT</option>
+  			<option value="easeOutQuint">ASEXYBOXLITE_LABEL_EASYOUTQUINT</option>
+  			<option value="easeInOutQuint">ASEXYBOXLITE_LABEL_EASYINOUTQUINT</option>
+  			<option value="easeInSine">ASEXYBOXLITE_LABEL_EASYINSINE</option>
+  			<option value="easeOutSine">ASEXYBOXLITE_LABEL_EASYOUTSINE</option>
+  			<option value="easeInOutSine">ASEXYBOXLITE_LABEL_EASYINOUTSINE</option>
+  			<option value="easeInExpo">ASEXYBOXLITE_LABEL_EASYINEXPO</option>
+  			<option value="easeOutExpo">ASEXYBOXLITE_LABEL_EASYOUTEXPO</option>
+  			<option value="easeInOutExpo">ASEXYBOXLITE_LABEL_EASYINOUTEXPO</option>
+  			<option value="easeInCirc">ASEXYBOXLITE_LABEL_EASYINCIRC</option>
+  			<option value="easeOutCirc">ASEXYBOXLITE_LABEL_EASYOUTCIRC</option>
+  			<option value="easeInOutCirc">ASEXYBOXLITE_LABEL_EASYINOUTCIRC</option>
+  			<option value="easeInElastic">ASEXYBOXLITE_LABEL_EASYINELASTIC</option>
+  			<option value="easeOutElastic">ASEXYBOXLITE_LABEL_EASYOUTELASTIC</option>
+  			<option value="easeInOutElastic">ASEXYBOXLITE_LABEL_EASYINOUTELASTIC</option>
+  			<option value="easeInBack">ASEXYBOXLITE_LABEL_EASYINBACK</option>
+  			<option value="easeOutBack">ASEXYBOXLITE_LABEL_EASYOUTBACK</option>
+  			<option value="easeInOutBack">ASEXYBOXLITE_LABEL_EASYINOUTBACK</option>
+  			<option value="easeInBounce">ASEXYBOXLITE_LABEL_EASYINBOUNCE</option>
+  			<option value="easeOutBounce">ASEXYBOXLITE_LABEL_EASYOUTBOUNCE</option>
+  			<option value="easeInOutBounce">ASEXYBOXLITE_LABEL_EASYINOUTBOUNCE</option>
+  		</param>
+	</params>
+</install>

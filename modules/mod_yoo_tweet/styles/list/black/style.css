@@ -1,0 +1,22 @@
+/* style.css, Copyright (C) 2007 - 2009 YOOtheme GmbH */
+
+.yootools-black div.list div.yoo-tweet ul li {
+	border-top: 1px solid #282828;
+}
+
+.yootools-black div.list div.yoo-tweet ul li.first {
+	border: none;
+}
+
+.yootools-black div.list div.yoo-tweet ul li.odd {
+	background: #141414;
+}
+
+.yootools-black div.list div.yoo-tweet ul li.even {
+	background: #1e1e1e;
+}
+
+.yootools-black div.list div.yoo-tweet a.image {
+	border: 1px solid #3c3c3c;
+	background: #141414;
+}

@@ -1,0 +1,23 @@
+/* style.css, Copyright (C) 2007 - 2009 YOOtheme GmbH */
+
+a:focus { outline: none; }
+button::-moz-focus-inner { border: none; }
+
+div.yoo-search { 
+	position: relative;
+}
+
+div.yoo-search ul {
+	margin: 0px;
+	padding: 0px;
+}
+ 
+div.yoo-search li {
+	margin: 0px;
+	padding: 0px;
+	display: block;
+}
+
+div.yoo-search div.resultbox {
+	display: none;
+}

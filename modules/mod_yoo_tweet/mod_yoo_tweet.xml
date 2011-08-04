@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>YOOtweet</name>
+	<author>YOOtheme</author>
+	<creationDate>April 2009</creationDate>
+	<copyright>Copyright (C) 2007 - 2009 YOOtheme GmbH</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@yootheme.com</authorEmail>
+	<authorUrl>http://www.yootheme.com</authorUrl>
+	<version>1.5.4</version>
+	<description>YOOtweet module of the YOOtheme club (http://www.yootheme.com) for Joomla! 1.5.</description>
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_yoo_tweet.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_yoo_tweet">mod_yoo_tweet.php</filename>
+		<filename>changelog.php</filename>
+		<filename>helper.php</filename>
+		<filename>mod_yoo_tweet.css.php</filename>
+		<filename>index.html</filename>
+		<folder>styles</folder>
+		<folder>tmpl</folder>
+	</files>
+	<params>
+		<param name="style" type="list" default="list" label="Style" description="The YOOtweet styling">
+			<option value="list">List</option>
+			<option value="single">Single</option>
+		</param>
+		<param name="from_user" type="text" default="" label="From a User" description="Display tweets from a user" />
+		<param name="to_user" type="text" default="" label="To a User" description="Display tweets to a user" />
+		<param name="ref_user" type="text" default="" label="Referencing a User" description="Display tweets referencing a user" />
+		<param name="hashtag" type="text" default="" label="Containing a Hashtag" description="Display tweets containing a hashtag (up to 16 characters)" />
+		<param name="word" type="text" default="" label="Containing a Word" description="Display tweets containing a word" />
+		<param name="image" type="list" default="1" label="Image" description="Show/Hide the image of the Twitter user">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="author" type="list" default="1" label="Author" description="Show/Hide author of the tweets">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="date" type="list" default="1" label="Publish Date" description="Show/Hide the publish date of the tweets">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="image_size" type="text" default="48" label="Image Size" description="Default Twitter image size is 48px" />
+		<param name="num_tweets" type="text" size="6" default="5" label="Number of Tweets" description="Maximum number of tweets to display" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Module Class Suffix" />
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="15" label="Cache Time" description="The time in seconds before the module is re-cached" />
+	</params>
+</install>

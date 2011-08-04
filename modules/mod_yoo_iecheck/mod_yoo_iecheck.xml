@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>YOOiecheck</name>
+	<author>YOOtheme</author>
+	<creationDate>May 2009</creationDate>
+	<copyright>Copyright (C) 2007 - 2008 YOOtheme Ltd. &amp; Co. KG</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@yootheme.com</authorEmail>
+	<authorUrl>http://www.yootheme.com</authorUrl>
+	<version>1.5.2</version>
+	<description>YOOiecheck module of the YOOtheme club (http://www.yootheme.com) for Joomla! 1.5. Requires mootools 1.1</description>
+	<files>
+		<filename module="mod_yoo_iecheck">mod_yoo_iecheck.php</filename>
+		<filename>mod_yoo_iecheck.xml</filename>
+		<filename>changelog.php</filename>
+		<filename>index.html</filename>
+		<filename>images/warning.png</filename>
+		<filename>images/firefox.png</filename>
+		<filename>images/safari.png</filename>
+		<filename>images/opera.png</filename>
+		<filename>images/ie.png</filename>
+	</files>
+	<params>
+		<param name="message" type="textarea" default="You are using Internet Explorer 6. Please upgrade your browser to increase safety and your browsing experience. Choose one of the following links to download a modern browser:" label="Display message" rows="10" cols="30" description="Displayed message when Internet Explorer 6 is detected" />
+		<param name="firefox" type="radio" default="1" label="Firefox" description="Show Firefox Browser download option">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="safari" type="radio" default="1" label="Safari" description="Show Safari download option">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="opera" type="radio" default="1" label="Opera" description="Show Opera Browser download option">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="ie" type="radio" default="1" label="Internet Explorer" description="Show Internet Explorer Browser download option">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default="-blank" label="Module Class Suffix" description="Module Class Suffix" />
+	</params>
+</install>

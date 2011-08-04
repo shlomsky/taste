@@ -1,0 +1,120 @@
+#blenddiv {
+background-repeat:no-repeat;
+overflow:hidden;
+position:absolute;
+z-index:1;
+}
+
+.s5_button_if {
+width:19px;
+float:right;
+height:20px;
+padding-right:4px;
+cursor:pointer; }
+
+
+
+.s5_mask{
+	position:absolute;
+	width:896px;
+	height:338px;
+	overflow:hidden;
+}
+.s5_is_wrap6 .buttons{
+	clear:both;
+	text-align:center;
+}
+
+/* s5_is_wrap 7*/
+#s5_if_innerbox{
+	position:absolute;
+}
+#s5_if_innerbox span{
+	display:block;
+	float:left;
+}
+
+#s5_if_thumbsouter{
+	position:relative;
+	width:206px;
+	margin-right:19px;
+	clear:both;
+	float:right;
+	height:41px;
+	overflow:hidden;
+	margin-top:271px;
+}
+#s5_if_thumbsouter .s5_if_thumbs, #s5_if_thumbs_handlesout, #s5_if_thumbs_maskout{
+	position:absolute;
+	top:0;
+	width:100%;
+	z-index:1;
+	height:41px;
+}
+#s5_if_thumbsouter .s5_if_thumbs div, #s5_if_thumbs_handlesout span{
+	border:1px solid #cccccc;
+	cursor:pointer;
+	display:block;
+	float:left;
+	height:39px;
+	margin:0px 7px 0px 3px;
+	width:56px;
+	}
+#s5_if_thumbsouter .s5_if_thumbs div img{
+	width:56px;
+	height:42px;
+	float:right;
+}
+#s5_if_thumbs_handlesout span{
+	background:url(thumb_invisible.gif) no-repeat;
+}
+#s5_if_thumbs_maskout{
+	width:1200px;
+	background:url(s5_if_thumbs_mask.gif) no-repeat center top;
+}
+
+p#s5_if_thumbs_handlesout {
+	padding:0px;
+	margin:0px;}
+
+
+.s5_is_wrap{padding:0px; margin:0px; border:none;width:896px;}
+
+
+#cont{width:550px;margin:0 auto;background:#fff;text-align:left;padding:20px}
+
+.buttons{padding:5px;}
+.buttons span{color:#0080FF;padding:0 5px;cursor:pointer;font:10px Verdana}
+.buttons span.active, .buttons span:hover{background:#0080FF;color:#fff}
+
+#s5_is_leftarrow {
+	background:url(left_arrow.png) no-repeat center;
+	height:319px;
+	position:absolute;
+	width:66px;
+	cursor:pointer;
+	z-index:1;}
+	
+#s5_is_rightarrow {
+	background:url(right_arrow.png) no-repeat center;
+	height:319px;
+	float:right;
+	position:relative;
+	cursor:pointer;
+	width:66px;
+	z-index:1;}
+	
+	
+#s5_ismod_stop {
+	background:transparent url(stop.png) no-repeat scroll 0 0;
+	height:129px;
+	padding-left:7px;
+	padding-top:3px;
+	width:129px;}
+	
+#s5_ismod_play {
+	background:transparent url(play.png) no-repeat scroll 0 0;
+	height:129px;
+	padding-left:7px;
+	padding-top:3px;
+	width:129px;}

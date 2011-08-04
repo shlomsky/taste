@@ -1,0 +1,9 @@
+/* ie6hacks.css, Copyright (C) 2007 - 2009 YOOtheme GmbH */
+
+div.blank div.yoo-search div.searchbox button {
+	top: 1px;
+}
+
+div.blank div.yoo-search div.resultbox-bg {
+	zoom: 1;
+}

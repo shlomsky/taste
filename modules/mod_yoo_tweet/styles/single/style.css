@@ -1,0 +1,29 @@
+/* style.css, Copyright (C) 2007 - 2009 YOOtheme GmbH */
+
+div.single div.yoo-tweet {
+	overflow: hidden;
+}
+
+div.single div.yoo-tweet a.image {
+	display: block;
+	margin-right: 15px;
+	padding: 3px;
+	border: 1px solid #c8c8c8;
+	background: #ffffff;
+	float: left;
+}
+
+div.single div.yoo-tweet p.text {
+	margin: 5px 0px 0px 0px;
+}
+
+div.single div.yoo-tweet p.meta {
+	margin: 0px;
+	font-size: 10px;
+}
+
+div.single div.yoo-tweet p.meta span.autor {
+}
+
+div.single div.yoo-tweet p.meta span.date {
+}

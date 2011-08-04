@@ -1,0 +1,56 @@
+/* style.css, Copyright (C) 2007 - 2009 YOOtheme GmbH */
+
+.yootools-black div.default div.yoo-search div.resultbox-bg {
+	border-left: 1px solid #323232;
+	border-right: 1px solid #323232;
+	background: #1e1e1e;
+}
+
+.yootools-black div.default div.yoo-search div.resultbox-bl {
+	background: url(styles/default/black/images/resultbox_bl.png) 0 100% no-repeat;
+}
+
+.yootools-black div.default div.yoo-search div.resultbox-br {
+	background: url(styles/default/black/images/resultbox_br.png) 100% 100% no-repeat;
+}
+
+.yootools-black div.default div.yoo-search div.resultbox-b {
+	background: url(styles/default/black/images/resultbox_b.png) 0 100% repeat-x;
+}
+
+.yootools-black div.default div.yoo-search div.resultbox-b a:link,
+.yootools-black div.default div.yoo-search div.resultbox-b a:visited,
+.yootools-black div.default div.yoo-search div.resultbox-b a:hover {
+	color: #C8C8C8;
+}
+
+.yootools-black div.default div.yoo-search a.search-more {
+	color: #C8C8C8;
+}
+
+.yootools-black div.default div.yoo-search span.search-more {
+	background: url(styles/default/black/images/more_icon.png) 0 0 no-repeat;
+}
+
+.yootools-black div.default div.yoo-search h3.search-header {
+	background: url(styles/default/black/images/header_bg.png) 0 0 repeat-x;
+	color: #C8C8C8;
+}
+
+.yootools-black div.default div.yoo-search .resultbox-bg a {
+	background: #1e1e1e;
+}
+
+.yootools-black div.default div.yoo-search .resultbox-bg a:hover {
+	background: #282828;
+}
+
+.yootools-black div.default div.yoo-search .resultbox-bg a:link,
+.yootools-black div.default div.yoo-search .resultbox-bg a:visited,
+.yootools-black div.default div.yoo-search .resultbox-bg a:hover {
+	color: #646464;
+}
+
+.yootools-black div.default div.yoo-search .resultbox-bg a h3 {
+	color: #969696;
+}

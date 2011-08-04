@@ -1,0 +1,13 @@
+/* ie6hacks.css, Copyright (C) 2007 - 2009 YOOtheme GmbH */
+
+.yootools-black div.default div.yoo-search div.resultbox-bl {
+	background: url(styles/default/black/images/resultbox_bl_ie6.png) 0 100% no-repeat;
+}
+
+.yootools-black div.default div.yoo-search div.resultbox-br {
+	background: url(styles/default/black/images/resultbox_br_ie6.png) 100% 100% no-repeat;
+}
+
+.yootools-black div.default div.yoo-search div.resultbox-b {
+	background: url(styles/default/black/images/resultbox_b_ie6.png) 0 100% repeat-x;
+}

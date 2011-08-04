@@ -1,0 +1,67 @@
+/* Copyright (C) 2007 - 2011 YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * This CSS file is for customization purpose only
+ */ 
+
+#logo a.logo-icon {
+	display: block;
+	width: 240px;
+	height: 100px;
+	background: url(../../../images/yootheme/logo.png) 0 0 no-repeat;
+}
+.style-blue #logo a.logo-icon { background-image: url(../../../images/yootheme/logo_blue.png); }
+.style-green #logo a.logo-icon { background-image: url(../../../images/yootheme/logo_green.png); }
+.style-orange #logo a.logo-icon { background-image: url(../../../images/yootheme/logo_orange.png); }
+.style-pink #logo a.logo-icon { background-image: url(../../../images/yootheme/logo_pink.png); }
+.style-turquoise #logo a.logo-icon { background-image: url(../../../images/yootheme/logo_turquoise.png); }
+
+/* rss + twitter toolbar icons */
+#toolbar a.rss,
+#toolbar a.twitter {
+	display: inline-block;
+	margin-top: 7px;
+}
+
+/* demo content: spotlight teaser */
+#headerbar .spotlight .teaser {
+	height: 300px;
+	background: url(../../../images/yootheme/home_header_spotlight_blog.jpg) 0 0 no-repeat;
+}
+
+.background-desert #headerbar .spotlight .teaser { background-image: url(../../../images/yootheme/home_header_spotlight_desert.jpg) }
+.background-grass #headerbar .spotlight .teaser { background-image: url(../../../images/yootheme/home_header_spotlight_grass.jpg) }
+.background-stadium #headerbar .spotlight .teaser { background-image: url(../../../images/yootheme/home_header_spotlight_stadium.jpg) }
+.background-worldmapblue #headerbar .spotlight .teaser { background-image: url(../../../images/yootheme/home_header_spotlight_worldmapblue.jpg) }
+.background-worldmapwhite #headerbar .spotlight .teaser { background-image: url(../../../images/yootheme/home_header_spotlight_worldmapwhite.jpg) }
+.background-street #headerbar .spotlight .teaser { background-image: url(../../../images/yootheme/home_header_spotlight_street.jpg) }
+.background-fabricdark #headerbar .spotlight .teaser { background-image: url(../../../images/yootheme/home_header_spotlight_fabricdark.jpg) }
+.background-squares #headerbar .spotlight .teaser { background-image: url(../../../images/yootheme/home_header_spotlight_squares.jpg) }
+.background-concert #headerbar .spotlight .teaser { background-image: url(../../../images/yootheme/home_header_spotlight_concert.jpg) }
+
+
+/* demo content: icons page */
+.iconbox {
+	padding: 19px;
+	border: 1px solid #E5E5E5;
+	background: #FAFBFB;
+	overflow: hidden; 
+}
+
+/* demo content: social bookmarks */
+#socialbookmarks a {
+	display: block;
+	height: 30px;
+	width: 30px;
+	background: url(../../../images/yootheme/socialbookmarks.png) 0 0 no-repeat;
+}
+
+#socialbookmarks a.twitter:hover { background-position: 0 -30px; }
+#socialbookmarks a.facebook { background-position: 0 -60px; }
+#socialbookmarks a.facebook:hover { background-position: 0 -90px; }
+#socialbookmarks a.flickr { background-position: 0 -120px; }
+#socialbookmarks a.flickr:hover { background-position: 0 -150px; }
+#socialbookmarks a.linkedin { background-position: 0 -180px; }
+#socialbookmarks a.linkedin:hover { background-position: 0 -210px; }
+#socialbookmarks a.myspace { background-position: 0 -240px; }
+#socialbookmarks a.myspace:hover { background-position: 0 -270px; }

@@ -1,0 +1,9 @@
+/* ie6hacks.css, Copyright (C) 2007 - 2009 YOOtheme GmbH */
+
+div.single div.yoo-tweet ul li {
+	zoom: 1;
+}
+
+div.single div.yoo-tweet a.image img {
+	float: left;
+}

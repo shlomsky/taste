@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>YOOsearch</name>
+	<author>YOOtheme</author>
+	<creationDate>April 2009</creationDate>
+	<copyright>Copyright (C) 2007 - 2009 YOOtheme GmbH</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@yootheme.com</authorEmail>
+	<authorUrl>http://www.yootheme.com</authorUrl>
+	<version>1.5.6</version>
+	<description>YOOsearch module of the YOOtheme club (http://www.yootheme.com) for Joomla! 1.5.</description>
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_yoo_search.ini</language>
+		<language tag="de-DE">language/de-DE.mod_yoo_search.ini</language>
+		<language tag="it-IT">language/it-IT.mod_yoo_search.ini</language>
+		<language tag="fr-FR">language/fr-FR.mod_yoo_search.ini</language>
+		<language tag="cs-CZ">language/cs-CZ.mod_yoo_search.ini</language>	
+		<language tag="nb-NO">language/nb-NO.mod_yoo_search.ini</language>	
+		<language tag="pt-BR">language/pt-BR.mod_yoo_search.ini</language>	
+		<language tag="pt-PT">language/pt-PT.mod_yoo_search.ini</language>		
+	</languages>
+	<files>
+		<filename module="mod_yoo_search">mod_yoo_search.php</filename>
+		<filename>mod_yoo_search.xml</filename>
+		<filename>mod_yoo_search.css.php</filename>
+		<filename>mod_yoo_search.js</filename>
+		<filename>helper.php</filename>
+		<filename>changelog.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>styles</folder>
+	</files>
+	<params>
+		<param name="style" type="list" default="default" label="Style" description="The YOOsearch styling">
+			<option value="default">Default</option>
+			<option value="blank">Blank</option>
+		</param>
+		<param name="box_width" type="text" default="400" label="Result box width (px)" description="Search results box width in pixels" />
+		<param name="char_limit" type="text" default="130" label="No. of chars in Result text" description="Maximum no of chars in result text" />
+		<param name="res_limit" type="text" default="6" label="No. of Result Items" description="Maximum no of result items to display" />
+		<param name="cat_limit" type="text" default="6" label="No. of Category Items" description="Maximum no of category items to display" />
+		<param name="categories" type="textarea" default="" label="Categories" rows="25" cols="50" description="Define additional search categories. Syntax: {cat title=[headline] image=[path/image.png] keywords=[joomla, name]}Description text{/cat}" />
+		<param name="moduleclass_sfx" type="text" default="-blank" label="Module Class Suffix" description="Module Class Suffix" />
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>BreezingForms</name>
+	<creationDate>April 2010</creationDate>
+	<author>Markus Bopp | Until Version 1.4.7: Peter Koch, Chur, Switzerland. Thanks for your great work!</author>
+	<copyright>This Joomla! component is released under the GNU/GPL license</copyright>
+	<authorEmail>markus.bopp@crosstec.de</authorEmail>
+	<authorUrl>www.crosstec.de</authorUrl>
+	<version>1.7.1 Stable (build 730) [Trinity]</version>
+	<description>
+		&lt;h2&gt;BreezingForms component: Enhanced form design tool&lt;/h2&gt;
+		Next find BreezingForms in the &lt;code&gt;Components&lt;/code&gt; menu, and click on
+		&lt;code&gt;Configuration&lt;/code&gt; to continue with step 2 of the installation
+		process.&lt;/p&gt;
+	</description>
+	<installfile>install.secimage.php</installfile>
+    <uninstallfile>uninstall.secimage.php</uninstallfile>
+	<files>
+		<filename>index.html</filename>
+		<filename>breezingforms.php</filename>
+		<filename>facileforms.js</filename>
+		<filename>facileforms.xml.php</filename>
+		<filename>facileforms.class.php</filename>
+		<filename>facileforms.process.php</filename>
+		<filename>markdown.php</filename>
+		<filename>exports/index.html</filename>
+		<filename>uploads/index.html</filename>
+		<filename>downloadtpl/index.html</filename>
+		<filename>downloadtpl/download.php</filename>
+		<filename>downloadtpl/error.php</filename>
+		<filename>downloadtpl/sofort_download.php</filename>
+		<filename>downloadtpl/sofort_success.php</filename>
+		<filename>images/index.html</filename>
+		<filename>images/pizzashop/index.html</filename>
+		<filename>images/pizzashop/delivery.jpg</filename>
+		<filename>images/pizzashop/design.jpg</filename>
+		<filename>images/pizzashop/lights.jpg</filename>
+		<filename>images/pizzashop/margherita.jpg</filename>
+		<filename>images/pizzashop/quattro.jpg</filename>
+		<filename>images/captcha/gdfonts/bubblebath.gdf</filename>
+		<filename>images/captcha/gdfonts/index.html</filename>
+		<filename>images/captcha/elephant.ttf</filename>
+		<filename>images/captcha/index.html</filename>
+		<filename>images/captcha/LICENSE.txt</filename>
+		<filename>images/captcha/README.FONT.txt</filename>
+		<filename>images/captcha/README.txt</filename>
+		<filename>images/captcha/securimage_show.php</filename>
+		<filename>images/captcha/securimage.php</filename>
+		<filename>images/captcha/refresh-captcha.png</filename>
+		<filename>images/200x65px.png</filename>
+		<folder>themes</folder>
+		<folder>libraries</folder>
+	</files>
+	<uninstall>
+		<queries>
+			<query>
+				delete from `#__components`
+				where `option` = 'com_breezingforms'
+				and (
+					(admin_menu_link like 'option=com_breezingforms&amp;act=run%')
+					or
+					(admin_menu_link='' and link='')
+				)
+			</query>
+		</queries>
+	</uninstall>
+	<administration>
+		<menu>BreezingForms</menu>
+		<submenu>
+			<menu act="managerecs">Manage Records</menu>
+			<menu act="managemenus">Manage Backend Menus</menu>
+			<menu act="manageforms">Manage Forms</menu>
+			<menu act="managescripts">Manage Scripts</menu>
+			<menu act="managepieces">Manage Pieces</menu>
+			<menu act="integrate">Integrator</menu>
+			<menu act="configuration">Configuration</menu>
+		</submenu>
+		<files>
+			<filename>index.html</filename>
+			<filename>install.secimage.php</filename>
+			<filename>uninstall.secimage.php</filename>
+			<filename>admin.breezingforms.php</filename>
+			<filename>toolbar.facileforms.html.php</filename>
+			<filename>toolbar.facileforms.php</filename>
+			<filename>classloader.php</filename>
+			<folder>legacyclasses</folder>
+			<folder>libraries</folder>
+			<folder>captchas</folder>
+			<folder>joomfish</folder>
+			<folder>mailtpl</folder>
+                        <folder>pdftpl</folder>
+		</files>
+		<images>
+			<filename>admin/index.html</filename>
+			<filename>admin/areautils.js</filename>
+			<filename>admin/config.class.php</filename>
+			<filename>admin/config.html.php</filename>
+			<filename>admin/config.php</filename>
+			<filename>admin/download.php</filename>
+			<filename>admin/element.class.php</filename>
+			<filename>admin/element.html.php</filename>
+			<filename>admin/element.php</filename>
+			<filename>admin/quickmode-elements-js.php</filename>
+			<filename>admin/quickmode-editor.php</filename>
+			<filename>admin/quickmode.class.php</filename>
+			<filename>admin/quickmode.html.php</filename>
+			<filename>admin/quickmode.php</filename>
+			<filename>admin/easymode.class.php</filename>
+			<filename>admin/easymode.html.php</filename>
+			<filename>admin/easymode.php</filename>
+			<filename>admin/easymode-js.php</filename>
+			<filename>admin/integrator.php</filename>
+			<filename>admin/integrator.class.php</filename>
+			<filename>admin/integrator.html.php</filename>
+			<filename>admin/form.class.php</filename>
+			<filename>admin/form.html.php</filename>
+			<filename>admin/form.php</filename>
+			<filename>admin/import.class.php</filename>
+			<filename>admin/install.class.php</filename>
+			<filename>admin/install.html.php</filename>
+			<filename>admin/install.php</filename>
+			<filename>admin/menu.class.php</filename>
+			<filename>admin/menu.html.php</filename>
+			<filename>admin/menu.php</filename>
+			<filename>admin/piece.class.php</filename>
+			<filename>admin/piece.html.php</filename>
+			<filename>admin/piece.php</filename>
+			<filename>admin/recordmanagement.class.php</filename>
+			<filename>admin/recordmanagement.php</filename>
+			<filename>admin/run.php</filename>
+			<filename>admin/script.class.php</filename>
+			<filename>admin/script.html.php</filename>
+			<filename>admin/script.php</filename>
+			<filename>packages/index.html</filename>
+			<filename>packages/samples.english.xml</filename>
+			<filename>packages/stdlib.english.xml</filename>
+			<filename>packages/oldlib.english.xml</filename>
+			<filename>sql/index.html</filename>
+			<filename>sql/create.sql</filename>
+			<filename>sql/upgrade_1.1.sql</filename>
+			<filename>sql/upgrade_1.2.sql</filename>
+			<filename>sql/upgrade_1.3.sql</filename>
+			<filename>sql/upgrade_1.4.sql</filename>
+			<filename>images/index.html</filename>
+			<filename>images/icons/index.html</filename>
+			<filename>images/icons/close_x.png</filename>
+			<filename>images/icons/download.png</filename>
+			<filename>images/icons/download_f2.png</filename>
+			<filename>images/icons/keys.png</filename>
+			<filename>images/icons/keys_f2.png</filename>
+			<filename>images/icons/movedn.png</filename>
+			<filename>images/icons/movedn_f2.png</filename>
+			<filename>images/icons/movelt.png</filename>
+			<filename>images/icons/movelt_f2.png</filename>
+			<filename>images/icons/movert.png</filename>
+			<filename>images/icons/movert_f2.png</filename>
+			<filename>images/icons/moveup.png</filename>
+			<filename>images/icons/moveup_f2.png</filename>
+			<filename>images/icons/print.png</filename>
+			<filename>images/icons/print_f2.png</filename>
+			<filename>images/icons/query.png</filename>
+			<filename>images/icons/query_f2.png</filename>
+			<filename>images/icons/register.png</filename>
+			<filename>images/icons/register_f2.png</filename>
+			<filename>images/icons/switch.png</filename>
+			<filename>images/icons/switch_f2.png</filename>
+			<filename>images/icons/refresh-captcha.png</filename>
+		</images>
+		
+		<languages>
+			<language tag="de-DE">languages/de-DE/admin/de-DE.com_breezingforms.menu.ini</language>
+			<language tag="de-DE">languages/de-DE/admin/de-DE.com_breezingforms.ini</language>
+			<language tag="en-GB">languages/en-GB/admin/en-GB.com_breezingforms.ini</language>
+			<language tag="hu-HU">languages/hu-HU/admin/hu-HU.com_breezingforms.ini</language>
+			<language tag="tr-TR">languages/tr-TR/admin/tr-TR.com_breezingforms.ini</language>
+			<language tag="fr-FR">languages/fr-FR/admin/fr-FR.com_breezingforms.ini</language>
+			<language tag="es-ES">languages/es-ES/admin/es-ES.com_breezingforms.menu.ini</language>
+			<language tag="es-ES">languages/es-ES/admin/es-ES.com_breezingforms.ini</language>
+			<language tag="nl-NL">languages/nl-NL/admin/nl-NL.com_breezingforms.menu.ini</language>
+			<language tag="nl-NL">languages/nl-NL/admin/nl-NL.com_breezingforms.ini</language>
+		</languages>
+		
+	</administration>
+	
+	<languages>
+		<language tag="de-DE">languages/de-DE/public/de-DE.com_breezingforms.ini</language>
+		<language tag="en-GB">languages/en-GB/public/en-GB.com_breezingforms.ini</language>
+		<language tag="hu-HU">languages/hu-HU/public/hu-HU.com_breezingforms.ini</language>
+		<language tag="tr-TR">languages/tr-TR/public/tr-TR.com_breezingforms.ini</language>
+		<language tag="fr-FR">languages/fr-FR/public/fr-FR.com_breezingforms.ini</language>
+		<language tag="es-ES">languages/es-ES/public/es-ES.com_breezingforms.ini</language>
+		<language tag="nl-NL">languages/nl-NL/public/nl-NL.com_breezingforms.ini</language>
+	</languages>
+	
+	<params name="ff_com_params" description="BreezingForms - Parameter settings">
+			<param name="ff_com_name" type="text" default="" label="Form name" description="Enter the name of the form here" />
+			<param name="ff_com_page" type="text" default="1" label="Page number" description="Enter the starting page number here" />
+			<param name="ff_com_editable" type="radio" default="0" label="Submission editable by user?" description="Should the form be editable by the user?">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="ff_com_editable_override" type="radio" default="0" label="Remove existing submissions?" description="If submission is editable: Should previous submission for this form removed?">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="ff_com_frame" type="radio" default="0" label="Run in iframe" description="Run the form in an iframe">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="ff_com_border" type="radio" default="0" label="Border" description="Select if border is displayed">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="ff_com_align" type="list" default="1" label="Horizontal align" description="Choose the horizontal align here">
+				<option value="0">Left</option>
+				<option value="1">Center</option>
+				<option value="2">Right</option>
+				<option value="3">Position</option>
+			</param>
+			<param name="ff_com_left" type="text" default="0" label="Left position (pixels)" description="Left position in pixels (when Horizontal align=Position)" />
+			<param name="ff_com_top" type="text" default="0" label="Top position (pixels)" description="Top position in pixels" />
+			<param name="ff_com_parprv" type="text" default="" label="Private parameters" description="Parameters private to main form. Example: &amp;ff_param_foo=bar&amp;ff_param_xy=123" />
+			<param name="ff_com_parpub" type="text" default="" label="Public parameters" description="Parameters inherited by subforms. Example: &amp;ff_param_foo=bar&amp;ff_param_xy=123" />
+			<param name="ff_com_suffix" type="text" default="" label="CSS class suffix" description="Suffix to append to every CSS class name" />
+		</params>
+	
+</install>

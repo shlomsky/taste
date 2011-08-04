@@ -1,0 +1,222 @@
+/* Copyright  2007 - 2011 YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * item (addition)
+ */
+ 
+#system .item > .icon { 
+	margin: 2px 0 0 5px;
+	float: right;
+}
+
+#system .item > .edit a { vertical-align: text-top; }
+
+
+/*
+ * items (addition)
+ */
+ 
+#system .items.leading {
+	padding-bottom: 12px;
+	margin-bottom: 18px;
+	border-bottom: 1px solid #c8c8c8;
+	overflow: hidden;
+}
+
+/*
+ * item-list
+ */
+
+#system .item-list {
+	margin-top: 10px;
+	border-top: 1px solid #c8c8c8;
+	overflow: hidden;
+}
+
+/*
+ * filter
+ */
+
+#system .filter {
+	margin: 0 0 10px 0;
+	overflow: hidden;
+}
+
+#system .filter > div {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+/*
+ * search
+ */
+
+span.highlight { background-color: #ffffaa; }
+
+/*
+ * tooltips
+ * TODO: change .tip box and remove fix
+ */
+
+.tip-wrap {
+	display: none;
+	float: left;
+	background: #ffc;
+	border: 1px solid #D4D5AA;
+	padding: 5px;
+	max-width: 200px;
+	color: #323232;
+	font-size: 12px;
+}
+
+.tip-title {
+	margin-top: -15px;
+	padding: 15px 0 5px 0;
+	background: url(../../../../../system/images/selector-arrow.png) no-repeat;
+	font-weight: bold;
+	font-size: 13px;
+	
+}
+
+/* template related fix for tooltips */
+.tip-wrap .tip {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+	color: inherit;
+}
+
+/*
+ * form submission
+ */
+
+#system form.submission div { margin: 0; }
+
+#system form.submission fieldset {
+	margin-bottom: 30px;
+	padding-top: 15px;
+}
+
+#system form.submission fieldset > div {
+	margin-bottom: 10px;
+	padding: 2px 0 2px 0;
+	overflow: hidden;
+}
+#system form.submission div > * { vertical-align: middle; }
+#system form.submission div > label:first-child {
+	display: block;
+	width: 150px;
+	float: left;
+}
+
+#system form.submission div > input[type='text'],
+#system form.submission div > input[type='password'] {
+	padding: 5px;
+	width: 250px;
+}
+#system form.submission div > select {
+	padding: 5px;
+	width: 262px;
+}
+
+#system form.submission div > textarea { width: 255px; }
+
+#system form.submission small {
+	display: block;
+	margin: -25px 0 25px 0;
+}
+
+#system form.submission div.submit {
+	margin-top: -20px;
+	text-align: center;
+}
+
+#system form.submission div > .calendar { margin-left: 5px; }
+#system form.submission #metadesc { height: 100px; }
+#system form.submission #metakey { height: 60px; }
+
+/* validation */
+#system .invalid { border-color: #ff0000; }
+#system label.invalid { color: #ff0000; }
+
+/* calendar */
+#system a img.calendar {
+	width: 16px;
+	height: 16px;
+	margin-left: 3px;
+	background: url(../../../../../system/images/calendar.png) no-repeat;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+/* editor buttons */
+#system #editor-xtd-buttons {
+	margin: 10px 0 10px 0;
+	padding: 0;
+}
+
+#system #editor-xtd-buttons .button2-left,
+#system #editor-xtd-buttons .button2-left * { float: left; }
+
+#system #editor-xtd-buttons .button2-left {
+	margin-right: 5px;
+	background: url(../../../../../system/images/j_button2_left.png) no-repeat;
+}
+
+#system #editor-xtd-buttons .button2-left .image { background: url(../../../../../system/images/j_button2_image.png) 100% 0 no-repeat; }
+#system #editor-xtd-buttons .button2-left .readmore { background: url(../../../../../system/images/j_button2_readmore.png) 100% 0 no-repeat; }
+#system #editor-xtd-buttons .button2-left .pagebreak { background: url(../../../../../system/images/j_button2_pagebreak.png) 100% 0 no-repeat; }
+
+#system #editor-xtd-buttons .button2-left a,
+#system #editor-xtd-buttons .button2-left span {
+	display: block;
+	height: 22px;
+	padding: 0 24px 0 6px;
+	line-height: 22px;
+	font-size: 11px;
+	color: #666;
+}
+
+#system #editor-xtd-buttons .button2-left span { color: #999; }
+
+#system #editor-xtd-buttons .button2-left a:hover {
+	text-decoration: none;
+	color: #0B55C4;
+}
+
+/*
+ * system messages
+ * TODO: add same styles as for typo boxes
+ */
+
+#system-message {
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+#system-message dt { display: none; }
+#system-message dd {
+	padding: 10px;
+	border-top: 3px solid #84A7DB;
+	border-bottom: 3px solid #84A7DB;
+	color: #0055BB;
+}
+#system-message dd ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#system-message dd.error { color: #c00; background-color: #E6C0C0; border-top: 3px solid #DE7A7B; border-bottom: 3px solid #DE7A7B;}
+#system-message dd.notice { color: #c00; background: #EFE7B8; border-top: 3px solid #F0DC7E; border-bottom: 3px solid #F0DC7E;}
+
+/*
+ * system debug
+ */
+ 
+#system-debug {
+	padding: 30px;
+	background: #fff;
+	color: #333;
+}
+#system-debug div { font-size: 11px;}

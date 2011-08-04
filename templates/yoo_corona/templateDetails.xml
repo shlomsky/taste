@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+	<name>yoo_corona</name>
+	<version>5.5.0</version>
+	<creationDate>March 2011</creationDate>
+	<author>YOOtheme</author>
+	<authorEmail>info@yootheme.com</authorEmail>
+	<authorUrl>http://www.yootheme.com</authorUrl>
+    <copyright>Copyright (C) 2007 - 2011 YOOtheme GmbH</copyright>
+    <license>YOOtheme Proprietary Use License (http://www.yootheme.com/license)</license>
+	<description>Corona is the March 2011 theme of the YOOtheme club. It is based on YOOtheme's Warp CMS theme framework. NOTE: It is not free or public. This theme is for members of the YOOtheme club only.</description>
+	<files>
+		<filename>checksums</filename>
+		<filename>apple_touch_icon.png</filename>
+		<filename>changelog.php</filename>
+		<filename>component.php</filename>
+		<filename>config.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>params.ini</filename>
+		<filename>raw.php</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>presets.php</filename>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>html</folder>
+		<folder>layouts</folder>
+		<folder>warp</folder>
+		<folder>images</folder>
+		<folder>fonts</folder>
+	</files>
+	<positions>
+		<position>absolute</position>
+		<position>search</position>
+		<position>logo</position>
+		<position>menu</position>
+		<position>banner</position>
+		<position>socialbookmarks</position>
+		<position>toolbarleft</position>
+		<position>toolbarright</position>
+		<position>headerbar</position>
+		<position>breadcrumbs</position>
+		<position>top</position>
+		<position>topblock</position>
+		<position>left</position>
+		<position>right</position>
+		<position>maintop</position>
+		<position>contentleft</position>
+		<position>contentright</position>
+		<position>contenttop</position>
+		<position>contentbottom</position>
+		<position>mainbottom</position>
+		<position>bottom</position>
+		<position>bottomblock</position>
+		<position>footer</position>
+		<position>content1</position>
+		<position>content2</position>
+		<position>content3</position>
+		<position>content4</position>
+		<position>content5</position>
+		<position>content6</position>
+		<position>content7</position>
+		<position>content8</position>
+		<position>content9</position>
+		<position>debug</position>
+	</positions>
+	<params addpath="/templates/yoo_corona/warp/systems/joomla.1.5/elements">
+	    <param name="presets" type="preset" label="Presets" description="Presets" default="{}" />
+        <param name="allow_dynamic_preset" type="radio" default="1" label="Allow dynamic preset" description="Allow dynamic preset.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="style" type="list" default="default" label="Template Color" description="Color used for template">
+			<option value="default">Red</option>
+			<option value="blue">Blue</option>
+			<option value="green">Green</option>
+			<option value="orange">Orange</option>
+			<option value="pink">Pink</option>
+			<option value="turquoise">Turquoise</option>
+		</param>
+		<param name="background" type="list" default="default" label="Template Background" description="Background used for template">
+			<option value="default">Fabric</option>
+			<option value="fabricdark">Fabric Dark</option>
+			<option value="desert">Desert</option>
+			<option value="grass">Grass</option>
+			<option value="stadium">Stadium</option>
+			<option value="worldmapblue">World Mal Blue</option>
+			<option value="worldmapwhite">World Map White</option>
+			<option value="street">Street</option>
+			<option value="squares">Squares</option>
+			<option value="grid">Grid</option>
+			<option value="concert">Concert</option>
+		</param>
+		<param name="font" type="list" default="default" label="Template Font" description="Font used for template">
+			<option value="default">Default</option>
+			<option value="lucida">Lucida</option>
+			<option value="georgia">Georgia</option>
+			<option value="trebuchet">Trebuchet</option>
+		</param>
+		<param name="@spacer" type="spacer" />
+		<param name="template_width" type="text" size="10" default="1020" label="Template Width" description="Set the template width." />
+		<param name="template_width_unit" type="radio" default="px" label="Template Width Unit" description="Set the template width length unit to pixel or percent. For example use 90% to get a fluid layout.">
+			<option value="px">Pixel</option>
+			<option value="%">Percent</option>
+		</param>
+		<param name="@spacer" type="spacer" />
+		<param name="left_width" type="text" size="10" default="240" label="Left Width" description="Set the width of the #left column in pixels. Don't forget to modify existent background images to match the new width if needed." />
+		<param name="left_space" type="text" size="10" default="0" label="Left Space" description="Set the space between the #left and #main column in pixels." />
+		<param name="right_width" type="text" size="10" default="240" label="Right Width" description="Set the width of the #right column in pixels. Don't forget to modify existent background images to match the new width if needed." />
+		<param name="right_space" type="text" size="10" default="0" label="Right Space" description="Set the space between the #main and #right column in pixels." />
+		<param name="@spacer" type="spacer" />
+		<param name="contentleft_width" type="text" size="10" default="240" label="Contentleft Width" description="Set the width of the #contentleft column in pixels. Don't forget to modify existent background images to match the new width if needed." />
+		<param name="contentleft_space" type="text" size="10" default="0" label="Contentleft Space" description="Set the space between the #contentleft and #content column in pixels." />
+		<param name="contentright_width" type="text" size="10" default="240" label="Contentright Width" description="Set the width of the #contentright column in pixels. Don't forget to modify existent background images to match the new width if needed." />
+		<param name="contentright_space" type="text" size="10" default="0" label="Contentright Space" description="Set the space between the #content and #contentright column in pixels." />
+		<param name="@spacer" type="spacer" />
+		<param name="menu_width" type="text" size="10" default="250" label="Drop Down Column Width" description="Set the width of one column of the drop down menu in pixels." />
+		<param name="@spacer" type="spacer" />
+		<param name="date" type="radio" default="1" label="Show Date" description="Show/Hide the date.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="@spacer" type="spacer" />
+		<param name="load_webfonts" type="radio" default="1" label="Enable Web Font" description="Enable/Disable the Web Font.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="@spacer" type="spacer" />
+		<param name="compression" type="list" default="1" label="Compression" description="Select the compression mode: Minify and combine templates css and javascript into a single file. Compress these files with gzip. Use Data URIs instead of images to remove all image file requests.">
+			<option value="0">None</option>
+			<option value="1">Combination + Minify</option>
+			<option value="2">Combination + Minify + Gzip</option>
+			<option value="3">Combination + Minify + Gzip + Data URIs</option>
+		</param>
+		<param name="@spacer" type="spacer" />
+	    <param name="verify" type="verify" label="Verify Files" description="Detects and shows all template file modifications" />
+	</params>
+</install>

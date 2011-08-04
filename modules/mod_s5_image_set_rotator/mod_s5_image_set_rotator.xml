@@ -1,0 +1,306 @@
+<?xml version="1.0" ?>
+  <install type="module"  version="1.5.0">
+	<name>S5 Image Set Rotator</name>
+	<author>Shape5.com</author>
+	<creationDate>March 2009</creationDate>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>contact@shape5.com</authorEmail>
+	<authorUrl>www.shape5.com</authorUrl>
+	<version>1.0.0</version>
+	<description>This module will display sets of images with individual sources and hyperlinks in a rotating gallery.</description>
+	<files>
+		<filename module="mod_s5_image_set_rotator">mod_s5_image_set_rotator.php</filename> 
+		<filename>s5_image_set_rotator/s5_image_set_rotator.js</filename> 
+		<filename>s5_image_set_rotator/styles.css</filename> 
+		<filename>s5_image_set_rotator/left_arrow.png</filename> 
+		<filename>s5_image_set_rotator/right_arrow.png</filename> 
+	</files>
+	<params>
+	<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+	</param>
+	<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module, this allows individual module styling" />
+	<param name="pretext" type="textarea" cols="40" rows="5" default="" label="Pre-Text" description="Enter any pre-text message." />
+	<param name="posttext" type="textarea" cols="40" rows="5" default="" label="Post-Text" description="Enter any post-text message." />
+	<param name="height" type="text" default="139" label="Height" description="Enter the height of the module." />
+	<param name="width" type="text" default="622" label="Width" description="Enter the width of the module." />
+	<param name="tm" type="text" default="0" label="Module Top Margin In Pixels" />
+	<param name="rm" type="text" default="0" label="Module Right Margin In Pixels" />
+	<param name="bm" type="text" default="0" label="Module Bottom Margin In Pixels" />
+	<param name="lm" type="text" default="0" label="Module Left Margin In Pixels" />
+	<param name="arrowouter" type="text" default="10" label="Arrow Outer Padding" />
+	<param name="arrowinner" type="text" default="10" label="Arrow Inner Padding" />
+	<param name="displaytime" type="text" default="10" label="Display Time In Seconds - Type none To Disable This Feature." description="Enter the display each section will show for." />
+	<param name="spacer0" type="spacer" default="You may display up to 5 sets of images and each set may have a maximum amount of 7 images." label="Note:" description="" />
+	
+	<param name="numboxes" type="list" default="2" label="How Many Sets Of Images Would You Like To Display?" >
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	</param>
+	
+	
+	<param name="spacer1" type="spacer" default="Set 1 Image Settings" label="Set 1 Image Settings" description="" />
+	<param name="image1url" type="text" default="" label="URL Of Image 1" />
+	<param name="image1link" type="text" default="" label="Hyperlink Of Image 1 - Leave Blank If None." />
+	<param name="image1target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image1keywords" type="text" default="" label="Alt Tag Keywords For Image 1 - Leave Blank If None." />
+	<param name="image2url" type="text" default="" label="URL Of Image 2" />
+	<param name="image2link" type="text" default="" label="Hyperlink Of Image 2 - Leave Blank If None." />
+	<param name="image2target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image2keywords" type="text" default="" label="Alt Tag Keywords For Image 2 - Leave Blank If None." />
+	<param name="image3url" type="text" default="" label="URL Of Image 3" />
+	<param name="image3link" type="text" default="" label="Hyperlink Of Image 3 - Leave Blank If None." />
+	<param name="image3target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image3keywords" type="text" default="" label="Alt Tag Keywords For Image 3 - Leave Blank If None." />
+	<param name="image4url" type="text" default="" label="URL Of Image 4" />
+	<param name="image4link" type="text" default="" label="Hyperlink Of Image 4 - Leave Blank If None." />
+	<param name="image4target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image4keywords" type="text" default="" label="Alt Tag Keywords For Image 4 - Leave Blank If None." />
+	<param name="image5url" type="text" default="" label="URL Of Image 5" />
+	<param name="image5link" type="text" default="" label="Hyperlink Of Image 5 - Leave Blank If None." />
+	<param name="image5target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image5keywords" type="text" default="" label="Alt Tag Keywords For Image 5 - Leave Blank If None." />
+	<param name="image6url" type="text" default="" label="URL Of Image 6" />
+	<param name="image6link" type="text" default="" label="Hyperlink Of Image 6 - Leave Blank If None." />
+	<param name="image6target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image6keywords" type="text" default="" label="Alt Tag Keywords For Image 6 - Leave Blank If None." />
+	<param name="image7url" type="text" default="" label="URL Of Image 7" />
+	<param name="image7link" type="text" default="" label="Hyperlink Of Image 7 - Leave Blank If None." />
+	<param name="image7target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image7keywords" type="text" default="" label="Alt Tag Keywords For Image 7 - Leave Blank If None." />
+	
+	
+	<param name="spacer2" type="spacer" default="Set 2 Image Settings" label="Set 2 Image Settings" description="" />
+	<param name="image8url" type="text" default="" label="URL Of Image 8" />
+	<param name="image8link" type="text" default="" label="Hyperlink Of Image 8 - Leave Blank If None." />
+	<param name="image8target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image8keywords" type="text" default="" label="Alt Tag Keywords For Image 8 - Leave Blank If None." />
+	<param name="image9url" type="text" default="" label="URL Of Image 9" />
+	<param name="image9link" type="text" default="" label="Hyperlink Of Image 9 - Leave Blank If None." />
+	<param name="image9target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image9keywords" type="text" default="" label="Alt Tag Keywords For Image 9 - Leave Blank If None." />
+	<param name="image10url" type="text" default="" label="URL Of Image 10" />
+	<param name="image10link" type="text" default="" label="Hyperlink Of Image 10 - Leave Blank If None." />
+	<param name="image10target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image10keywords" type="text" default="" label="Alt Tag Keywords For Image 10 - Leave Blank If None." />
+	<param name="image11url" type="text" default="" label="URL Of Image 11" />
+	<param name="image11link" type="text" default="" label="Hyperlink Of Image 11 - Leave Blank If None." />
+	<param name="image11target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image11keywords" type="text" default="" label="Alt Tag Keywords For Image 11 - Leave Blank If None." />
+	<param name="image12url" type="text" default="" label="URL Of Image 12" />
+	<param name="image12link" type="text" default="" label="Hyperlink Of Image 12 - Leave Blank If None." />
+	<param name="image12target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image12keywords" type="text" default="" label="Alt Tag Keywords For Image 12 - Leave Blank If None." />
+	<param name="image13url" type="text" default="" label="URL Of Image 13" />
+	<param name="image13link" type="text" default="" label="Hyperlink Of Image 13 - Leave Blank If None." />
+	<param name="image13target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image13keywords" type="text" default="" label="Alt Tag Keywords For Image 13 - Leave Blank If None." />
+	<param name="image14url" type="text" default="" label="URL Of Image 14" />
+	<param name="image14link" type="text" default="" label="Hyperlink Of Image 14 - Leave Blank If None." />
+	<param name="image14target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image14keywords" type="text" default="" label="Alt Tag Keywords For Image 14 - Leave Blank If None." />
+	
+
+	<param name="spacer3" type="spacer" default="Set 3 Image Settings" label="Set 3 Image Settings" description="" />
+	<param name="image15url" type="text" default="" label="URL Of Image 15" />
+	<param name="image15link" type="text" default="" label="Hyperlink Of Image 15 - Leave Blank If None." />
+	<param name="image15target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image15keywords" type="text" default="" label="Alt Tag Keywords For Image 15 - Leave Blank If None." />
+	<param name="image16url" type="text" default="" label="URL Of Image 16" />
+	<param name="image16link" type="text" default="" label="Hyperlink Of Image 16 - Leave Blank If None." />
+	<param name="image16target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image16keywords" type="text" default="" label="Alt Tag Keywords For Image 16 - Leave Blank If None." />
+	<param name="image17url" type="text" default="" label="URL Of Image 17" />
+	<param name="image17link" type="text" default="" label="Hyperlink Of Image 17 - Leave Blank If None." />
+	<param name="image17target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image17keywords" type="text" default="" label="Alt Tag Keywords For Image 17 - Leave Blank If None." />
+	<param name="image18url" type="text" default="" label="URL Of Image 18" />
+	<param name="image18link" type="text" default="" label="Hyperlink Of Image 18 - Leave Blank If None." />
+	<param name="image18target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image18keywords" type="text" default="" label="Alt Tag Keywords For Image 18 - Leave Blank If None." />
+	<param name="image19url" type="text" default="" label="URL Of Image 19" />
+	<param name="image19link" type="text" default="" label="Hyperlink Of Image 19 - Leave Blank If None." />
+	<param name="image19target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image19keywords" type="text" default="" label="Alt Tag Keywords For Image 19 - Leave Blank If None." />
+	<param name="image20url" type="text" default="" label="URL Of Image 20" />
+	<param name="image20link" type="text" default="" label="Hyperlink Of Image 20 - Leave Blank If None." />
+	<param name="image20target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image20keywords" type="text" default="" label="Alt Tag Keywords For Image 20 - Leave Blank If None." />
+	<param name="image21url" type="text" default="" label="URL Of Image 21" />
+	<param name="image21link" type="text" default="" label="Hyperlink Of Image 21 - Leave Blank If None." />
+	<param name="image21target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image21keywords" type="text" default="" label="Alt Tag Keywords For Image 21 - Leave Blank If None." />
+	
+	
+	<param name="spacer4" type="spacer" default="Set 4 Image Settings" label="Set 4 Image Settings" description="" />
+	<param name="image22url" type="text" default="" label="URL Of Image 22" />
+	<param name="image22link" type="text" default="" label="Hyperlink Of Image 22 - Leave Blank If None." />
+	<param name="image22target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image22keywords" type="text" default="" label="Alt Tag Keywords For Image 22 - Leave Blank If None." />
+	<param name="image23url" type="text" default="" label="URL Of Image 23" />
+	<param name="image23link" type="text" default="" label="Hyperlink Of Image 23 - Leave Blank If None." />
+	<param name="image23target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image23keywords" type="text" default="" label="Alt Tag Keywords For Image 23 - Leave Blank If None." />
+	<param name="image24url" type="text" default="" label="URL Of Image 24" />
+	<param name="image24link" type="text" default="" label="Hyperlink Of Image 24 - Leave Blank If None." />
+	<param name="image24target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image24keywords" type="text" default="" label="Alt Tag Keywords For Image 24 - Leave Blank If None." />
+	<param name="image25url" type="text" default="" label="URL Of Image 25" />
+	<param name="image25link" type="text" default="" label="Hyperlink Of Image 25 - Leave Blank If None." />
+	<param name="image25target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image25keywords" type="text" default="" label="Alt Tag Keywords For Image 25 - Leave Blank If None." />
+	<param name="image26url" type="text" default="" label="URL Of Image 26" />
+	<param name="image26link" type="text" default="" label="Hyperlink Of Image 26 - Leave Blank If None." />
+	<param name="image26target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image26keywords" type="text" default="" label="Alt Tag Keywords For Image 26 - Leave Blank If None." />
+	<param name="image27url" type="text" default="" label="URL Of Image 27" />
+	<param name="image27link" type="text" default="" label="Hyperlink Of Image 27 - Leave Blank If None." />
+	<param name="image27target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image27keywords" type="text" default="" label="Alt Tag Keywords For Image 27 - Leave Blank If None." />
+	<param name="image28url" type="text" default="" label="URL Of Image 28" />
+	<param name="image28link" type="text" default="" label="Hyperlink Of Image 28 - Leave Blank If None." />
+	<param name="image28target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image28keywords" type="text" default="" label="Alt Tag Keywords For Image 28 - Leave Blank If None." />
+	
+	
+	<param name="spacer5" type="spacer" default="Set 5 Image Settings" label="Set 5 Image Settings" description="" />
+	<param name="image29url" type="text" default="" label="URL Of Image 29" />
+	<param name="image29link" type="text" default="" label="Hyperlink Of Image 29 - Leave Blank If None." />
+	<param name="image29target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image29keywords" type="text" default="" label="Alt Tag Keywords For Image 29 - Leave Blank If None." />
+	<param name="image30url" type="text" default="" label="URL Of Image 30" />
+	<param name="image30link" type="text" default="" label="Hyperlink Of Image 30 - Leave Blank If None." />
+	<param name="image30target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image30keywords" type="text" default="" label="Alt Tag Keywords For Image 30 - Leave Blank If None." />
+	<param name="image31url" type="text" default="" label="URL Of Image 31" />
+	<param name="image31link" type="text" default="" label="Hyperlink Of Image 31 - Leave Blank If None." />
+	<param name="image31target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image31keywords" type="text" default="" label="Alt Tag Keywords For Image 31 - Leave Blank If None." />
+	<param name="image32url" type="text" default="" label="URL Of Image 32" />
+	<param name="image32link" type="text" default="" label="Hyperlink Of Image 32 - Leave Blank If None." />
+	<param name="image32target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image32keywords" type="text" default="" label="Alt Tag Keywords For Image 32 - Leave Blank If None." />
+	<param name="image33url" type="text" default="" label="URL Of Image 33" />
+	<param name="image33link" type="text" default="" label="Hyperlink Of Image 33 - Leave Blank If None." />
+	<param name="image33target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image33keywords" type="text" default="" label="Alt Tag Keywords For Image 33 - Leave Blank If None." />
+	<param name="image34url" type="text" default="" label="URL Of Image 34" />
+	<param name="image34link" type="text" default="" label="Hyperlink Of Image 34 - Leave Blank If None." />
+	<param name="image34target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image34keywords" type="text" default="" label="Alt Tag Keywords For Image 34 - Leave Blank If None." />
+	<param name="image35url" type="text" default="" label="URL Of Image 35" />
+	<param name="image35link" type="text" default="" label="Hyperlink Of Image 35 - Leave Blank If None." />
+	<param name="image35target" type="list" default="Same" label="Link Will Open In New Window or Same Window?" >
+		<option value="_blank">New</option>
+		<option value="_self">Same</option>
+	</param>
+	<param name="image35keywords" type="text" default="" label="Alt Tag Keywords For Image 35 - Leave Blank If None." />
+	
+	
+	</params>
+</install>

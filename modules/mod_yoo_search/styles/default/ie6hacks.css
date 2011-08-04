@@ -1,0 +1,22 @@
+/* ie6hacks.css, Copyright (C) 2007 - 2009 YOOtheme GmbH */
+
+div.default div.yoo-search div.searchbox input,
+div.default div.yoo-search div.searchbox button {
+	position: relative;
+}
+
+div.default div.yoo-search div.resultbox-bg {
+	zoom: 1;
+}
+
+div.default div.yoo-search div.resultbox-bl {
+	background: url(styles/default/images/resultbox_bl_ie6.png) 0 100% no-repeat;
+}
+
+div.default div.yoo-search div.resultbox-br {
+	background: url(styles/default/images/resultbox_br_ie6.png) 100% 100% no-repeat;
+}
+
+div.default div.yoo-search div.resultbox-b {
+	background: url(styles/default/images/resultbox_b_ie6.png) 0 100% repeat-x;
+}

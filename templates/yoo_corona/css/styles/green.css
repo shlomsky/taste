@@ -1,0 +1,45 @@
+/* Copyright (C) 2007 - 2011 YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* typography */
+h2,
+h4,
+h6,
+a:link,
+a:visited { color: #7DAB00; }
+ul.links li { background-image: url(../../images/styles/green/typography/list_links.png); }
+ul.links li:hover a,
+#bottom ul.links li:hover a { color: #7DAB00; }
+
+/* menus */
+#toolbar .menu li a { background-image: url(../../images/styles/green/topmenu_item_bg.png); }
+#footer .menu li a { background-image: url(../../images/styles/green/footermenu_item_bg.png); }
+#menu a.level3.current span.bg,
+#menu li.level3 a.level3:hover span.bg { color: #8AC600; }
+#menu a.level3 span.bg,
+#menu span.level3 span.bg {	background-image: url(../../images/styles/green/menu_level3_item.png); }
+div.mod-line ul.menu a:hover span.bg,
+div.mod-line ul.menu span:hover span.bg { color: #7DAB00; }
+div.mod-line ul.menu a.level1,
+div.mod-line ul.menu span.level1 { background: url(../../images/styles/green/submenu_level1_item.png); }
+div.mod-line ul.menu li.parent .level1 span.bg { background-image: url(../../images/styles/green/submenu_level1_item_parent.png); }
+div.mod-line ul.menu li.level2 span.bg { background-image: url(../../images/styles/green/submenu_level2_item.png); }
+
+/* modules */
+.module h3.header span.color { color: #7DAB00; }
+div.mod-box-templatecolor div.box-1 { 
+	background-image: url(../../images/styles/green/module_box_templatecolor_bg.png);
+	background-color: #6C9A01;
+}
+div.mod-box-templatecolor h3.header span.subtitle { color: #4D8100; }
+div.mod-box-templatecolor a { color: #385E00; }
+#system .item > .date {	background-image: url(../../images/styles/green/system_date.png); }
+#searchbox .results li.more-results:hover,
+ul.line li a:hover,
+#bottom ul.line li a:hover,
+#system .pagination strong { color: #7DAB00; }
+#system .pagination .previous,
+#system .pagination .next { background-image: url(../../images/styles/green/pagination_bg.png); }
+.breadcrumbs strong { color: #7DAB00; }
+a.readmore,
+a.readmore span.readmore-1,
+a.readmore span.readmore-2  { background-image: url(../../images/styles/green/readmore.png); }

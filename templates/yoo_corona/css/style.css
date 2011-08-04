@@ -1,0 +1,109 @@
+/* Copyright (C) 2007 - 2011 YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* BACKGROUND */
+#page.background-desert { 
+	background-image: url(../images/background/desert_bg.jpg);
+	background-color: #130F0C;
+	background-repeat: no-repeat;
+}
+
+#page.background-grass {
+	background-image: url(../images/background/grass_bg.jpg);
+	background-color: #0A0C07;
+	background-repeat: no-repeat;
+}
+
+#page.background-stadium {
+	background-image: url(../images/background/stadium_bg.jpg);
+	background-color: #19191B;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+}
+
+#page.background-worldmapblue {
+	background-image: url(../images/background/worldmapblue_bg.png);
+	background-color: #010115;
+	background-repeat: repeat-x;
+}
+.background-worldmapblue #page-body { background: url(../images/background/worldmapblue_img.jpg) 50% 0 no-repeat; }
+
+#page.background-worldmapwhite {
+	background-image: url(../images/background/worldmapwhite_bg.png);
+	background-color: #DFE0E2;
+	background-repeat: repeat-x;
+}
+.background-worldmapwhite #page-body { background: url(../images/background/worldmapwhite_img.jpg) 50% 0 no-repeat; }
+
+#page.background-street {
+	background-image: url(../images/background/street_bg.jpg);
+	background-color: #19191B;
+	background-position: 50% 20%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#page.background-fabricdark {	background-image: url(../images/background/fabricdark_bg.png); }
+.background-fabricdark #page-body { background: url(../images/background/fabricdark_img.jpg) 50% 0 no-repeat; }
+
+#page.background-squares {	background-image: url(../images/background/squares_bg.png); }
+.background-squares #page-body { background: url(../images/background/squares_img.jpg) 50% 0 no-repeat; }
+
+#page.background-grid {	
+	background-image: url(../images/background/grid_img.jpg);
+	background-repeat: no-repeat;
+	background-color: #D3D4D8;
+}
+.background-grid #page-body { background: url(../images/background/grid_bg.png) 50% 0 repeat; }
+
+#page.background-concert { 
+	background-image: url(../images/background/concert_bg.jpg);
+	background-color: #0B0B09;
+	background-repeat: no-repeat;
+}
+div.yoo-gallery div.thumbnails {display:none;}
+div.yoo-gallery div.slideshow-bg {margin:0 !important;}
+
+/* set raster overlays */
+.background-stadium #page-body,
+.background-street #page-body,
+.background-grass #page-body,
+.background-concert #page-body { background: url(../images/background/raster.png) 50% 0 repeat;}
+
+/* darker wrappers */
+#page.background-desert .wrapper-1,
+#page.background-desert .wrapper-2,
+#page.background-grass .wrapper-1,
+#page.background-grass .wrapper-2,
+#page.background-stadium .wrapper-1,
+#page.background-stadium .wrapper-2,
+#page.background-worldmapblue .wrapper-1,
+#page.background-worldmapblue .wrapper-2,
+#page.background-fabricdark .wrapper-1,
+#page.background-fabricdark .wrapper-2,
+#page.background-squares .wrapper-1,
+#page.background-squares .wrapper-2 { background-image: url(../images/wrapper_dark_bg.png); }
+
+/* FONTS */
+body.font-lucida,
+.font-lucida h1,
+.font-lucida h2,
+.font-lucida h3,
+.font-lucida h4,
+.font-lucida h5,
+.font-lucida h6 { font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif; }
+
+body.font-georgia,
+.font-georgia h1,
+.font-georgia h2,
+.font-georgia h3,
+.font-georgia h4,
+.font-georgia h5,
+.font-georgia h6 { font-family: Georgia, "Times New Roman", Times, serif; }
+
+body.font-trebuchet,
+.font-trebuchet h1,
+.font-trebuchet h2,
+.font-trebuchet h3,
+.font-trebuchet h4,
+.font-trebuchet h5,
+.font-trebuchet h6 { font-family: "Trebuchet MS", Verdana, Arial, sans-serif; }

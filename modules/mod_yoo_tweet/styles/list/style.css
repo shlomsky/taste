@@ -1,0 +1,50 @@
+/* style.css, Copyright (C) 2007 - 2009 YOOtheme GmbH */
+
+div.list div.yoo-tweet ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+div.list div.yoo-tweet ul li {
+	margin: 0px;
+	padding: 8px;
+	border-top: 1px solid #dcdcdc;
+	overflow: hidden;
+}
+
+div.list div.yoo-tweet ul li.first {
+	border: none;
+}
+
+div.list div.yoo-tweet ul li.odd {
+	background: #ffffff;
+}
+
+div.list div.yoo-tweet ul li.even {
+	background: #f5f5f5;
+}
+
+div.list div.yoo-tweet a.image {
+	display: block;
+	margin-right: 15px;
+	padding: 3px;
+	border: 1px solid #c8c8c8;
+	background: #ffffff;
+	float: left;
+}
+
+div.list div.yoo-tweet p.text {
+	margin: 5px 0px 0px 0px;
+}
+
+div.list div.yoo-tweet p.meta {
+	margin: 0px;
+	font-size: 10px;
+}
+
+div.list div.yoo-tweet p.meta span.autor {
+}
+
+div.list div.yoo-tweet p.meta span.date {
+}

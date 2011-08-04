@@ -1,0 +1,50 @@
+/* style.css, Copyright (C) 2007 - 2009 YOOtheme GmbH */
+
+.yootools-black div.blank div.yoo-search div.resultbox-bg {
+	border-left: 1px solid #323232;
+	border-right: 1px solid #323232;
+	background: #1E1E1E;
+}
+
+.yootools-black div.blank div.yoo-search div.resultbox-b {
+	border: 1px solid #323232;
+	border-top: none;
+	background: #323232;
+}
+
+.yootools-black div.blank div.yoo-search div.resultbox-b a:link,
+.yootools-black div.blank div.yoo-search div.resultbox-b a:visited,
+.yootools-black div.blank div.yoo-search div.resultbox-b a:hover {
+	color: #C8C8C8;
+}
+
+.yootools-black div.blank div.yoo-search a.search-more {
+	color: #C8C8C8;
+}
+
+.yootools-black div.blank div.yoo-search span.search-more {
+	background: url(styles/blank/black/images/more_icon.png) 0 60% no-repeat;
+}
+
+.yootools-black div.blank div.yoo-search h3.search-header {
+	background: #323232;
+	color: #C8C8C8;
+}
+
+.yootools-black div.blank div.yoo-search .resultbox-bg a {
+	background: #1E1E1E;
+}
+
+.yootools-black div.blank div.yoo-search .resultbox-bg a:hover {
+	background: #282828;
+}
+
+.yootools-black div.blank div.yoo-search .resultbox-bg a:link,
+.yootools-black div.blank div.yoo-search .resultbox-bg a:visited,
+.yootools-black div.blank div.yoo-search .resultbox-bg a:hover {
+	color: #646464;
+}
+
+.yootools-black div.blank div.yoo-search .resultbox-bg a h3 {
+	color: #969696;
+}

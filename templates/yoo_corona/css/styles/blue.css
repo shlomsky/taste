@@ -1,0 +1,45 @@
+/* Copyright (C) 2007 - 2011 YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* typography */
+h2,
+h4,
+h6,
+a:link,
+a:visited { color: #1479C4; }
+ul.links li { background-image: url(../../images/styles/blue/typography/list_links.png); }
+ul.links li:hover a,
+#bottom ul.links li:hover a { color: #1479C4; }
+
+/* menus */
+#toolbar .menu li a { background-image: url(../../images/styles/blue/topmenu_item_bg.png); }
+#footer .menu li a { background-image: url(../../images/styles/blue/footermenu_item_bg.png); }
+#menu a.level3.current span.bg,
+#menu li.level3 a.level3:hover span.bg { color: #1D92E9; }
+#menu a.level3 span.bg,
+#menu span.level3 span.bg {	background-image: url(../../images/styles/blue/menu_level3_item.png); }
+div.mod-line ul.menu a:hover span.bg,
+div.mod-line ul.menu span:hover span.bg { color: #1479C4; }
+div.mod-line ul.menu a.level1,
+div.mod-line ul.menu span.level1 { background: url(../../images/styles/blue/submenu_level1_item.png); }
+div.mod-line ul.menu li.parent .level1 span.bg { background-image: url(../../images/styles/blue/submenu_level1_item_parent.png); }
+div.mod-line ul.menu li.level2 span.bg { background-image: url(../../images/styles/blue/submenu_level2_item.png); }
+
+/* modules */
+.module h3.header span.color { color: #1478C4; }
+div.mod-box-templatecolor div.box-1 { 
+	background-image: url(../../images/styles/blue/module_box_templatecolor_bg.png);
+	background-color: #105B94;
+}
+div.mod-box-templatecolor h3.header span.subtitle { color: #0C436B; }
+div.mod-box-templatecolor a { color: #072D47; }
+#system .item > .date {	background-image: url(../../images/styles/blue/system_date.png); }
+#searchbox .results li.more-results:hover,
+ul.line li a:hover,
+#bottom ul.line li a:hover,
+#system .pagination strong { color: #1478C4; }
+#system .pagination .previous,
+#system .pagination .next { background-image: url(../../images/styles/blue/pagination_bg.png); }
+.breadcrumbs strong { color: #1478C4; }
+a.readmore,
+a.readmore span.readmore-1,
+a.readmore span.readmore-2  { background-image: url(../../images/styles/blue/readmore.png); }
